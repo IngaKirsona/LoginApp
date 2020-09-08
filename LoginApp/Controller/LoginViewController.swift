@@ -17,6 +17,9 @@ class LoginViewController: UIViewController {
     private let id = "2020"
     private let identifier = "WelcomeViewController"
     
+    let userDefaults = UserDefaults.standard
+    
+    
     let notificationCenter = NotificationCenter.default
     
     
@@ -48,13 +51,21 @@ class LoginViewController: UIViewController {
             warningPopUP(withTitle: "Invalid login!", withMessage: "Please enter correct username and password!")
             return
         }
+        
+        userDefaults.set(userName, forKey: "userName")
+        userDefaults.set(id, forKey: "id")
+        
+        
         goToWelcomeVC()
+        
+        userNameTextField.text = ""
+        passwordTextField.text = ""
     }
     //pass the text through storyboard with our id
     func goToWelcomeVC(){
         let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: identifier) as! WelcomeViewController
         
-        initController.userName = userNameTextField.text
+       // initController.userName = userNameTextField.text
         view.endEditing(true)
         present(initController, animated: true)
     }
