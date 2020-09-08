@@ -13,6 +13,8 @@
 		7AE7DB88250778B8004DE04C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7DB86250778B8004DE04C /* Main.storyboard */; };
 		7AE7DB8A250778BA004DE04C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7DB89250778BA004DE04C /* Assets.xcassets */; };
 		7AE7DB8D250778BA004DE04C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7DB8B250778BA004DE04C /* LaunchScreen.storyboard */; };
+		7AE7DB9A250784C5004DE04C /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB99250784C5004DE04C /* BounceButton.swift */; };
+		7AE7DB9C250784E3004DE04C /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB9B250784E3004DE04C /* DesignButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7AE7DB89250778BA004DE04C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AE7DB8C250778BA004DE04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AE7DB8E250778BA004DE04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE7DB99250784C5004DE04C /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		7AE7DB9B250784E3004DE04C /* DesignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		7AE7DB7F250778B8004DE04C /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				7AE7DB80250778B8004DE04C /* AppDelegate.swift */,
-				7AE7DB82250778B8004DE04C /* SceneDelegate.swift */,
-				7AE7DB84250778B8004DE04C /* ViewController.swift */,
-				7AE7DB86250778B8004DE04C /* Main.storyboard */,
+				7AE7DB9825078479004DE04C /* ExtraResource */,
+				7AE7DB9725078460004DE04C /* Extension */,
+				7AE7DB942507840D004DE04C /* AppDelegate */,
+				7AE7DB9525078433004DE04C /* Controller */,
+				7AE7DB9625078443004DE04C /* View */,
 				7AE7DB89250778BA004DE04C /* Assets.xcassets */,
 				7AE7DB8B250778BA004DE04C /* LaunchScreen.storyboard */,
 				7AE7DB8E250778BA004DE04C /* Info.plist */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		7AE7DB942507840D004DE04C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7DB80250778B8004DE04C /* AppDelegate.swift */,
+				7AE7DB82250778B8004DE04C /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7AE7DB9525078433004DE04C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7DB84250778B8004DE04C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7AE7DB9625078443004DE04C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7DB86250778B8004DE04C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE7DB9725078460004DE04C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7AE7DB9825078479004DE04C /* ExtraResource */ = {
+			isa = PBXGroup;
+			children = (
+				7AE7DB99250784C5004DE04C /* BounceButton.swift */,
+				7AE7DB9B250784E3004DE04C /* DesignButton.swift */,
+			);
+			path = ExtraResource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AE7DB85250778B8004DE04C /* ViewController.swift in Sources */,
+				7AE7DB9A250784C5004DE04C /* BounceButton.swift in Sources */,
 				7AE7DB81250778B8004DE04C /* AppDelegate.swift in Sources */,
 				7AE7DB83250778B8004DE04C /* SceneDelegate.swift in Sources */,
+				7AE7DB9C250784E3004DE04C /* DesignButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
