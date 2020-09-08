@@ -15,6 +15,7 @@
 		7AE7DB8D250778BA004DE04C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7DB8B250778BA004DE04C /* LaunchScreen.storyboard */; };
 		7AE7DB9A250784C5004DE04C /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB99250784C5004DE04C /* BounceButton.swift */; };
 		7AE7DB9C250784E3004DE04C /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB9B250784E3004DE04C /* DesignButton.swift */; };
+		7AE7DB9E25078A25004DE04C /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB9D25078A25004DE04C /* DesignableTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7AE7DB8E250778BA004DE04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AE7DB99250784C5004DE04C /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		7AE7DB9B250784E3004DE04C /* DesignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
+		7AE7DB9D25078A25004DE04C /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		7AE7DB9825078479004DE04C /* ExtraResource */ = {
 			isa = PBXGroup;
 			children = (
+				7AE7DB9D25078A25004DE04C /* DesignableTextField.swift */,
 				7AE7DB99250784C5004DE04C /* BounceButton.swift */,
 				7AE7DB9B250784E3004DE04C /* DesignButton.swift */,
 			);
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AE7DB85250778B8004DE04C /* ViewController.swift in Sources */,
+				7AE7DB9E25078A25004DE04C /* DesignableTextField.swift in Sources */,
 				7AE7DB9A250784C5004DE04C /* BounceButton.swift in Sources */,
 				7AE7DB81250778B8004DE04C /* AppDelegate.swift in Sources */,
 				7AE7DB83250778B8004DE04C /* SceneDelegate.swift in Sources */,
