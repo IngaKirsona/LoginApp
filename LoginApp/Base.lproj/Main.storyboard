@@ -19,22 +19,37 @@
                                 <rect key="frame" x="0.0" y="175" width="414" height="209"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hH0-tc-BTM">
-                                <rect key="frame" x="53" y="421" width="304" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="304" id="mML-zA-Pjg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82T-GO-buk">
-                                <rect key="frame" x="55" y="485" width="304" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="304" id="XGn-5v-wZZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="v2b-xt-f7o">
+                                <rect key="frame" x="53" y="421" width="304" height="166"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hH0-tc-BTM">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Rnx-35-wXz"/>
+                                            <constraint firstAttribute="width" constant="304" id="mML-zA-Pjg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82T-GO-buk">
+                                        <rect key="frame" x="0.0" y="63" width="304" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="P18-kV-IaL"/>
+                                            <constraint firstAttribute="width" constant="304" id="XGn-5v-wZZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFP-xg-1y6">
+                                        <rect key="frame" x="0.0" y="126" width="304" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="4nj-vA-6gx"/>
+                                            <constraint firstAttribute="height" constant="40" id="veA-wS-0AC"/>
+                                        </constraints>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="EQw-kP-sC7">
                                 <rect key="frame" x="55" y="630" width="304" height="40"/>
                                 <subviews>
@@ -42,28 +57,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="135" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Mw8-Le-f5K"/>
-                                            <constraint firstAttribute="width" constant="135" id="Nnf-KJ-cjb"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="Nnf-KJ-cjb"/>
                                         </constraints>
                                         <state key="normal" title="Forgot User?"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eY-X0-fJF">
                                         <rect key="frame" x="169" y="0.0" width="135" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="135" id="e9E-Xt-9Ne"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="e9E-Xt-9Ne"/>
                                             <constraint firstAttribute="height" constant="40" id="eCt-eo-tnh"/>
                                         </constraints>
                                         <state key="normal" title="Forgot Password?"/>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFP-xg-1y6">
-                                <rect key="frame" x="55" y="547" width="304" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="304" id="4nj-vA-6gx"/>
-                                    <constraint firstAttribute="height" constant="40" id="veA-wS-0AC"/>
-                                </constraints>
-                                <state key="normal" title="Login"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
