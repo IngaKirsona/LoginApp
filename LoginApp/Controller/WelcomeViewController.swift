@@ -13,11 +13,15 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
     
+    
+    var userName: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
- 
         
-        
+        if userName != nil{
+            welcomeLabel.text = "Welcome, \(userName ?? "_"), with id ..."
+        }
     }
     
 

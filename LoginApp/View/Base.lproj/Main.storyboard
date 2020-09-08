@@ -73,8 +73,9 @@
                                                             <constraint firstAttribute="height" constant="40" id="P18-kV-IaL"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="XGn-5v-wZZ"/>
                                                         </constraints>
+                                                        <color key="textColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="EBGaramond-Regular" family="EB Garamond" pointSize="20"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="3"/>
@@ -184,43 +185,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63N-XN-TyW" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
-                                <rect key="frame" x="28" y="50" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Owh-5S-8wW"/>
-                                    <constraint firstAttribute="height" constant="50" id="fpy-pw-shc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="X">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="closeButtonTapped:" destination="wUH-Dk-6i0" eventType="touchUpInside" id="mE6-hZ-V9h"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="5CF-1i-L2f">
                                 <rect key="frame" x="53" y="333" width="308" height="230"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xK4-59-H8m">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xK4-59-H8m">
                                         <rect key="frame" x="0.0" y="0.0" width="308" height="104"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="104" id="eRr-fQ-Epg"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="308" id="md2-Sf-2Lz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="EBGaramond-Regular" family="EB Garamond" pointSize="40"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌿" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krO-Ph-hnc">
@@ -235,14 +210,40 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63N-XN-TyW" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
+                                <rect key="frame" x="41" y="102" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Owh-5S-8wW"/>
+                                    <constraint firstAttribute="height" constant="50" id="fpy-pw-shc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="wUH-Dk-6i0" eventType="touchUpInside" id="mE6-hZ-V9h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="63N-XN-TyW" firstAttribute="top" secondItem="Np2-b3-bNN" secondAttribute="top" constant="6" id="frr-HT-SjE"/>
+                            <constraint firstItem="63N-XN-TyW" firstAttribute="top" secondItem="Np2-b3-bNN" secondAttribute="top" constant="58" id="frr-HT-SjE"/>
                             <constraint firstItem="5CF-1i-L2f" firstAttribute="centerX" secondItem="RAs-KI-kOa" secondAttribute="centerX" id="hAr-Dp-Z4g"/>
-                            <constraint firstItem="63N-XN-TyW" firstAttribute="leading" secondItem="Np2-b3-bNN" secondAttribute="leading" constant="28" id="jit-fx-ILu"/>
+                            <constraint firstItem="63N-XN-TyW" firstAttribute="leading" secondItem="Np2-b3-bNN" secondAttribute="leading" constant="41" id="jit-fx-ILu"/>
                             <constraint firstItem="5CF-1i-L2f" firstAttribute="centerY" secondItem="RAs-KI-kOa" secondAttribute="centerY" id="mac-C4-edw"/>
-                            <constraint firstItem="Np2-b3-bNN" firstAttribute="trailing" secondItem="63N-XN-TyW" secondAttribute="trailing" constant="336" id="tj4-Z4-SBF"/>
+                            <constraint firstItem="Np2-b3-bNN" firstAttribute="trailing" secondItem="63N-XN-TyW" secondAttribute="trailing" constant="323" id="tj4-Z4-SBF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Np2-b3-bNN"/>
                     </view>
