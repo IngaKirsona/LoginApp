@@ -18,6 +18,7 @@
 		7AE7DB9E25078A25004DE04C /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB9D25078A25004DE04C /* DesignableTextField.swift */; };
 		7AE7DBA025078EF8004DE04C /* EBGaramond-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7DB9F25078EF8004DE04C /* EBGaramond-Italic-VariableFont_wght.ttf */; };
 		7AE7DBA225078F09004DE04C /* EBGaramond-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7DBA125078F09004DE04C /* EBGaramond-VariableFont_wght.ttf */; };
+		7AE7DBA425079AD0004DE04C /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DBA325079AD0004DE04C /* Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7AE7DB9D25078A25004DE04C /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		7AE7DB9F25078EF8004DE04C /* EBGaramond-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		7AE7DBA125078F09004DE04C /* EBGaramond-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		7AE7DBA325079AD0004DE04C /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		7AE7DB9725078460004DE04C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				7AE7DBA325079AD0004DE04C /* Extention.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				7AE7DB81250778B8004DE04C /* AppDelegate.swift in Sources */,
 				7AE7DB83250778B8004DE04C /* SceneDelegate.swift in Sources */,
 				7AE7DB9C250784E3004DE04C /* DesignButton.swift in Sources */,
+				7AE7DBA425079AD0004DE04C /* Extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -62,6 +62,9 @@
                                                                 <real key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="mT2-Jh-2PE"/>
+                                                        </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82T-GO-buk" customClass="DesignableTextField" customModule="LoginApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="63" width="304" height="40"/>
@@ -87,6 +90,9 @@
                                                                 <real key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="auh-Ro-kfA"/>
+                                                        </connections>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFP-xg-1y6" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="126" width="304" height="40"/>
@@ -109,6 +115,9 @@
                                                                 <real key="value" value="18"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddm-Oc-rNQ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -126,6 +135,9 @@
                                                         <state key="normal" title="Forgot User?">
                                                             <color key="titleColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="forgotUserTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAC-82-q1c"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eY-X0-fJF" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
                                                         <rect key="frame" x="169" y="0.0" width="135" height="40"/>
@@ -137,6 +149,9 @@
                                                         <state key="normal" title="Forgot Password?">
                                                             <color key="titleColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="forgotPasswordTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="deX-6N-1QK"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -152,6 +167,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="82T-GO-buk" id="HHr-cx-kE8"/>
+                        <outlet property="userNameTextField" destination="hH0-tc-BTM" id="iuq-4y-FUe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
