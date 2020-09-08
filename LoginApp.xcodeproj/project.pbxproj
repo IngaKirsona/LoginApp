@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7AE7DB81250778B8004DE04C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB80250778B8004DE04C /* AppDelegate.swift */; };
 		7AE7DB83250778B8004DE04C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB82250778B8004DE04C /* SceneDelegate.swift */; };
-		7AE7DB85250778B8004DE04C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB84250778B8004DE04C /* ViewController.swift */; };
+		7AE7DB85250778B8004DE04C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB84250778B8004DE04C /* LoginViewController.swift */; };
 		7AE7DB88250778B8004DE04C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7DB86250778B8004DE04C /* Main.storyboard */; };
 		7AE7DB8A250778BA004DE04C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7DB89250778BA004DE04C /* Assets.xcassets */; };
 		7AE7DB8D250778BA004DE04C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7DB8B250778BA004DE04C /* LaunchScreen.storyboard */; };
@@ -26,7 +26,7 @@
 		7AE7DB7D250778B8004DE04C /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE7DB80250778B8004DE04C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE7DB82250778B8004DE04C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AE7DB84250778B8004DE04C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AE7DB84250778B8004DE04C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7AE7DB87250778B8004DE04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AE7DB89250778BA004DE04C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AE7DB8C250778BA004DE04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		7AE7DB9525078433004DE04C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7AE7DB84250778B8004DE04C /* ViewController.swift */,
+				7AE7DB84250778B8004DE04C /* LoginViewController.swift */,
 				7AE7DBA52507A68A004DE04C /* WelcomeViewController.swift */,
 			);
 			path = Controller;
@@ -201,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE7DB85250778B8004DE04C /* ViewController.swift in Sources */,
+				7AE7DB85250778B8004DE04C /* LoginViewController.swift in Sources */,
 				7AE7DBA62507A68A004DE04C /* WelcomeViewController.swift in Sources */,
 				7AE7DB9E25078A25004DE04C /* DesignableTextField.swift in Sources */,
 				7AE7DB9A250784C5004DE04C /* BounceButton.swift in Sources */,

@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet weak var userNameTextField: DesignableTextField!
     @IBOutlet weak var passwordTextField: DesignableTextField!
     
-    private let userName = "inga"
+    private let userName = "Inga"
     private let id = "2020"
     private let identifier = "WelcomeViewController"
     
@@ -40,7 +40,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginButtonTapped(_ sender: Any) {
-        
+        handleLogin()
+    }
+    
+    func handleLogin(){
         guard  userNameTextField.text ==  userName, passwordTextField.text == id else {
             warningPopUP(withTitle: "Invalid login!", withMessage: "Please enter correct username and password!")
             return
@@ -72,3 +75,13 @@ class ViewController: UIViewController {
     
 }
 
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+        if textField == userNameTextField {
+            passwordTextField.becomeFirstResponder()
+        }else{
+            handleLogin()
+        }
+        return true
+    }
+}
