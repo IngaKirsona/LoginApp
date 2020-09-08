@@ -6,6 +6,12 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="EBGaramond-VariableFont_wght.ttf">
+            <string>EBGaramond-Regular</string>
+            <string>EBGaramond-Regular_Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -15,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="Ii6-12-Jf1">
-                                <rect key="frame" x="0.0" y="197" width="414" height="502"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Ii6-12-Jf1">
+                                <rect key="frame" x="0.0" y="205.5" width="414" height="485"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0324" translatesAutoresizingMaskIntoConstraints="NO" id="GPR-2x-T4a">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
@@ -26,20 +32,20 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="stD-vY-ht8">
-                                        <rect key="frame" x="55" y="253" width="304" height="249"/>
+                                        <rect key="frame" x="55" y="236" width="304" height="249"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="v2b-xt-f7o">
                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="166"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hH0-tc-BTM" customClass="DesignableTextField" customModule="LoginApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hH0-tc-BTM" customClass="DesignableTextField" customModule="LoginApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
                                                         <color key="tintColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Rnx-35-wXz"/>
-                                                            <constraint firstAttribute="width" constant="304" id="mML-zA-Pjg"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="mML-zA-Pjg"/>
                                                         </constraints>
                                                         <color key="textColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="EBGaramond-Regular" family="EB Garamond" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -51,20 +57,20 @@
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                                 <color key="value" red="0.63550949099999998" green="0.69728761910000003" blue="0.75686758759999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="person.fill" catalog="system"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="person.circle.fill" catalog="system"/>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                                                                 <real key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82T-GO-buk" customClass="DesignableTextField" customModule="LoginApp" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82T-GO-buk" customClass="DesignableTextField" customModule="LoginApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="63" width="304" height="40"/>
                                                         <color key="tintColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="P18-kV-IaL"/>
-                                                            <constraint firstAttribute="width" constant="304" id="XGn-5v-wZZ"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="XGn-5v-wZZ"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="EBGaramond-Regular" family="EB Garamond" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -76,7 +82,7 @@
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                                 <color key="value" red="0.63550949099999998" green="0.69728761910000003" blue="0.75686758759999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="lock.fill" catalog="system"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="lock.circle.fill" catalog="system"/>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
                                                                 <real key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
@@ -89,8 +95,9 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="4nj-vA-6gx"/>
                                                             <constraint firstAttribute="height" constant="40" id="veA-wS-0AC"/>
                                                         </constraints>
+                                                        <fontDescription key="fontDescription" name="EBGaramond-Regular_Bold" family="EB Garamond" pointSize="25"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Login"/>
+                                                        <state key="normal" title="LOGIN"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                                 <real key="value" value="3"/>
@@ -109,21 +116,27 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="EQw-kP-sC7">
                                                 <rect key="frame" x="0.0" y="209" width="304" height="40"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsz-3U-FwW">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsz-3U-FwW" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="135" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="Mw8-Le-f5K"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="Nnf-KJ-cjb"/>
                                                         </constraints>
-                                                        <state key="normal" title="Forgot User?"/>
+                                                        <fontDescription key="fontDescription" name="EBGaramond-Regular" family="EB Garamond" pointSize="17"/>
+                                                        <state key="normal" title="Forgot User?">
+                                                            <color key="titleColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eY-X0-fJF">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eY-X0-fJF" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
                                                         <rect key="frame" x="169" y="0.0" width="135" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="e9E-Xt-9Ne"/>
                                                             <constraint firstAttribute="height" constant="40" id="eCt-eo-tnh"/>
                                                         </constraints>
-                                                        <state key="normal" title="Forgot Password?"/>
+                                                        <fontDescription key="fontDescription" name="EBGaramond-Regular" family="EB Garamond" pointSize="17"/>
+                                                        <state key="normal" title="Forgot Password?">
+                                                            <color key="titleColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -147,7 +160,7 @@
     </scenes>
     <resources>
         <image name="IMG_0324" width="1891" height="934"/>
-        <image name="lock.fill" catalog="system" width="128" height="128"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="lock.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

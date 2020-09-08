@@ -16,6 +16,8 @@
 		7AE7DB9A250784C5004DE04C /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB99250784C5004DE04C /* BounceButton.swift */; };
 		7AE7DB9C250784E3004DE04C /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB9B250784E3004DE04C /* DesignButton.swift */; };
 		7AE7DB9E25078A25004DE04C /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE7DB9D25078A25004DE04C /* DesignableTextField.swift */; };
+		7AE7DBA025078EF8004DE04C /* EBGaramond-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7DB9F25078EF8004DE04C /* EBGaramond-Italic-VariableFont_wght.ttf */; };
+		7AE7DBA225078F09004DE04C /* EBGaramond-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AE7DBA125078F09004DE04C /* EBGaramond-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		7AE7DB99250784C5004DE04C /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		7AE7DB9B250784E3004DE04C /* DesignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
 		7AE7DB9D25078A25004DE04C /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		7AE7DB9F25078EF8004DE04C /* EBGaramond-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		7AE7DBA125078F09004DE04C /* EBGaramond-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EBGaramond-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				7AE7DB9D25078A25004DE04C /* DesignableTextField.swift */,
 				7AE7DB99250784C5004DE04C /* BounceButton.swift */,
 				7AE7DB9B250784E3004DE04C /* DesignButton.swift */,
+				7AE7DB9F25078EF8004DE04C /* EBGaramond-Italic-VariableFont_wght.ttf */,
+				7AE7DBA125078F09004DE04C /* EBGaramond-VariableFont_wght.ttf */,
 			);
 			path = ExtraResource;
 			sourceTree = "<group>";
@@ -175,7 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AE7DB8D250778BA004DE04C /* LaunchScreen.storyboard in Resources */,
+				7AE7DBA025078EF8004DE04C /* EBGaramond-Italic-VariableFont_wght.ttf in Resources */,
 				7AE7DB8A250778BA004DE04C /* Assets.xcassets in Resources */,
+				7AE7DBA225078F09004DE04C /* EBGaramond-VariableFont_wght.ttf in Resources */,
 				7AE7DB88250778B8004DE04C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
