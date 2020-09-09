@@ -210,26 +210,28 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63N-XN-TyW" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63N-XN-TyW" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
                                 <rect key="frame" x="41" y="102" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Owh-5S-8wW"/>
-                                    <constraint firstAttribute="height" constant="50" id="fpy-pw-shc"/>
+                                    <constraint firstAttribute="width" constant="50" id="bKS-VQ-PWA"/>
+                                    <constraint firstAttribute="height" constant="50" id="nz6-ek-rVd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="EBGaramond-Regular_Bold" family="EB Garamond" pointSize="30"/>
+                                <color key="tintColor" red="0.63550949099999998" green="0.69728761910000003" blue="0.75686758759999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="X">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.51013165709999997" green="0.61083865169999996" blue="0.68236070869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="21"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -239,11 +241,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="63N-XN-TyW" firstAttribute="top" secondItem="Np2-b3-bNN" secondAttribute="top" constant="58" id="frr-HT-SjE"/>
+                            <constraint firstItem="63N-XN-TyW" firstAttribute="leading" secondItem="Np2-b3-bNN" secondAttribute="leading" constant="41" id="2So-2J-AEo"/>
+                            <constraint firstItem="Np2-b3-bNN" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="63N-XN-TyW" secondAttribute="trailing" constant="201" id="Aq7-N9-0Rl"/>
+                            <constraint firstItem="63N-XN-TyW" firstAttribute="top" secondItem="Np2-b3-bNN" secondAttribute="top" constant="58" id="WtI-Gs-PH4"/>
                             <constraint firstItem="5CF-1i-L2f" firstAttribute="centerX" secondItem="RAs-KI-kOa" secondAttribute="centerX" id="hAr-Dp-Z4g"/>
-                            <constraint firstItem="63N-XN-TyW" firstAttribute="leading" secondItem="Np2-b3-bNN" secondAttribute="leading" constant="41" id="jit-fx-ILu"/>
                             <constraint firstItem="5CF-1i-L2f" firstAttribute="centerY" secondItem="RAs-KI-kOa" secondAttribute="centerY" id="mac-C4-edw"/>
-                            <constraint firstItem="Np2-b3-bNN" firstAttribute="trailing" secondItem="63N-XN-TyW" secondAttribute="trailing" constant="323" id="tj4-Z4-SBF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Np2-b3-bNN"/>
                     </view>

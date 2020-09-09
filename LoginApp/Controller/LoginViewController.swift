@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-         super.viewDidAppear(animated)
+        super.viewDidAppear(animated)
         if userDefaults.string(forKey: "userName") != nil{
             goToWelcomeVC()
         }
@@ -72,7 +72,7 @@ class LoginViewController: UIViewController {
     func goToWelcomeVC(){
         let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: identifier) as! WelcomeViewController
         
-       // initController.userName = userNameTextField.text
+        // initController.userName = userNameTextField.text
         view.endEditing(true)
         present(initController, animated: true)
     }
