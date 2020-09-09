@@ -24,8 +24,12 @@ class WelcomeViewController: UIViewController {
         }
     }
     
-
+//to erase all login details when close button is tapped
     @IBAction func closeButtonTapped(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "userName")
+        defaults.removeObject(forKey: "id")
+        defaults.synchronize()
         dismiss(animated: true, completion: nil)
     }
     

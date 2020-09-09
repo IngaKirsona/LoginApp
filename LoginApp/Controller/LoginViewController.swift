@@ -30,6 +30,13 @@ class LoginViewController: UIViewController {
         notificationCenter.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+         super.viewDidAppear(animated)
+        if userDefaults.string(forKey: "userName") != nil{
+            goToWelcomeVC()
+        }
+    }
+    
     @objc func keyboardWillShow(notification: Notification){
         if self.view.frame.origin.y == 0{
             self.view.frame.origin.y -= 150
@@ -82,8 +89,6 @@ class LoginViewController: UIViewController {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
-    
-    
 }
 
 extension LoginViewController: UITextFieldDelegate {
