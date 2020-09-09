@@ -19,6 +19,11 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+         super.viewDidAppear(animated)
         if let userName = UserDefaults.standard.string(forKey: "userName"),let id = UserDefaults.standard.string(forKey: "id"){
             welcomeLabel.text = "Welcome, \(userName), with id \(id)"
         }
